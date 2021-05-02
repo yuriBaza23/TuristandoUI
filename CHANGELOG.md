@@ -22,3 +22,8 @@ All notable changes to this project will be documented in this file. See [standa
 * Facilitação do layout utilizando um component Row ([aaf9726](https://github.com/yuriBaza23/TuristandoUI/commit/aaf97266ba8c36cada6da6461059f0f748f55347))
 * package.json e yarn.lock ([b88f7a1](https://github.com/yuriBaza23/TuristandoUI/commit/b88f7a1000fcc83985b7fcec433b89a32191154d))
 * Rendereização da Home como tela inicial ([cdae8d2](https://github.com/yuriBaza23/TuristandoUI/commit/cdae8d24d41a979003673dcf99a67c3804ab5d61))
+
+
+### Bug Fixes
+
+* Remoção do yarn.lock pelo .gitignore ([e4fec3b](https://github.com/yuriBaza23/TuristandoUI/commit/e4fec3beddd2839e355ef09b00b650ace66541db))
