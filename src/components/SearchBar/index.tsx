@@ -4,14 +4,16 @@ import CityValues from '../../contents/city';
 import { FiMapPin } from 'react-icons/fi';
 
 import { Container, Main } from './styles';
+import Row from '../Row';
 
 interface ISearchBarProps {
     undefinedCity: () => void;
     handleCity: (e: any) => void;
     city: string;
+    clickedTagsFilter: () => void;
 }
 
-const SearchBar: React.FC<ISearchBarProps> = ({ undefinedCity, city, handleCity }) => {
+const SearchBar: React.FC<ISearchBarProps> = ({ undefinedCity, city, handleCity, clickedTagsFilter }) => {
     const [state, setState]  = useState<string>();
 
     const handleUF = useCallback((value) => {
@@ -53,6 +55,12 @@ const SearchBar: React.FC<ISearchBarProps> = ({ undefinedCity, city, handleCity 
                     <button>BUSCAR</button>
                 </div>
             </Container>
+            <div className="search-tags">
+                <Row>
+                    <span>Nossos pontos turísticos:</span>
+                    <button className='link-button' onClick={clickedTagsFilter}>Filtrar por tags</button>
+                </Row>
+            </div>
         </Main>
     );
 }
