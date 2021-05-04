@@ -8,9 +8,10 @@ import SearchBar from '../SearchBar';
 
 interface IHeaderProps {
     page: 'home' | 'register';
+    clickedTagsFilter: () => void;
 }
 
-const Header: React.FC<IHeaderProps> = ({ page }) => {
+const Header: React.FC<IHeaderProps> = ({ page, clickedTagsFilter }) => {
     const [city, setCity] = useState<string>('');
 
     return(
@@ -27,6 +28,7 @@ const Header: React.FC<IHeaderProps> = ({ page }) => {
                     undefinedCity={() => {}}
                     handleCity={(e: any) => setCity(e.target.value)}
                     city={city}
+                    clickedTagsFilter={clickedTagsFilter}
                 />
             ) }
         </Container>
