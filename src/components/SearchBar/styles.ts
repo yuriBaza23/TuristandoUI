@@ -4,7 +4,7 @@ export const Main = styled.div`
     width: 55%;
 
     position: absolute;
-    bottom: -42.5px;
+    bottom: -92.5px;
     right: 22.5%;
 
     .text-turistando {
@@ -20,6 +20,33 @@ export const Main = styled.div`
             line-height: 56px;
 
             text-shadow: 0px 4px 11px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .search-tags {
+        margin-top: 25px;
+
+        span {
+            color: rgba(0, 0, 0, .45);
+            font-weight: 600;
+        }
+
+        .link-button {
+            margin-left: 5px;
+            background: transparent;
+
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: opacity .4s;
+
+            color: #808080;
+            text-decoration: underline;
+            font-weight: 300;
+
+            &:hover {
+                opacity: .7;
+            }
         }
     }
 
